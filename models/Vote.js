@@ -12,16 +12,14 @@ Vote.init(
         },
         //what needs to go here?    
         user_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
+            type: DataTypes.INTEGER,            
             references: {
                 model: 'user',
                 key: 'id'
             }
         },
         post_id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
+            type: DataTypes.INTEGER,            
             references: {
                 model: 'post',
                 key: 'id'
